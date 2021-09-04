@@ -1,10 +1,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 <style>
     html {
     font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem*/
     box-sizing: border-box;
-    
+    font-family: 'Montserrat', sans-serif;
 } 
 
 body {
@@ -57,8 +59,7 @@ header img{
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
-    border-top: none;
-    background-color:  rgba(90, 74, 0, 0.404);
+    background-color:  rgba(39,39,39,255);
     font-size: 2.5rem;
     width: 95%;
     display: block;
@@ -66,41 +67,6 @@ header img{
     margin-right: auto;
     color: azure;
   }
-
-  .herramienta{
-      min-height: 90vh;
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(8,1fr);
-      width: 50vw;
-      background-color: rgba(255,0,0,.7);
-      grid-column-gap: 3px;
-      grid-row-gap:3px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10%;
-      margin-bottom: 10%;
-  }
-@media (max-width:1024px){
-  .herramienta{
-    
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8,1fr);
-   
-    background-color: rgba(255,0,0,.7);
-    grid-column-gap: 3px;
-    grid-row-gap:3px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    
-  width:auto;
-  min-height:55vh;
-  }
-
-}
 
   .pixel {
    
@@ -121,31 +87,12 @@ header img{
     transform: scale(1.2); 
   }
 
-  .about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-    grid-column-gap: 1vh;
-    width: 95%;
+  .about{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
 }
-
-
-  .tarjetas {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.932);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
-    background-color: rgba(22, 2, 21, 0.897);
-    color: azure;
-    grid-column: 1;
-  }
-  .descripcion {
-      grid-column: 2;
-      font-size: 1.8rem;
-      color: azure;
-  }
 </style>
 <body>
     <header>
@@ -177,34 +124,8 @@ header img{
       
       <div class="about">
         <div class="tarjetas" id="tarjeta1">
-            <img src="./images/usr.jpg" alt="John" style="width:100%">
-            <h1>John Doe</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>Harvard University</p>
-            <div style="margin: 24px 0;">
-            <a href="#"><i class="fa fa-dribbble"></i></a> 
-            <a href="#"><i class="fa fa-twitter"></i></a>  
-            <a href="#"><i class="fa fa-linkedin"></i></a>  
-            <a href="#"><i class="fa fa-facebook"></i></a> 
-            </div>
+            <img src="./images/team.png" alt="John" style="width:100%">
         </div>
-
-        <div class="descripcion">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
-            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
-            praesentium ab esse recusandae!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
-            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
-            praesentium ab esse recusandae!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
-            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
-            praesentium ab esse recusandae!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
-            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
-            praesentium ab esse recusandae!
-
-        </div>
-
-
       </div>
 
 
