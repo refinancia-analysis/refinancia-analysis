@@ -32,9 +32,164 @@
 
 
 <body>
-    <div id="card">
-    <img src="imgs/FOTOSANTI.jpg">
-    <h1> Santiago Barreto </h1>
-    <h3> Carrera 64 # 24 - 47 </h3>
-    </div>
+    <header>
+        <img src="./images/bw-banner.jpg" alt="">
+    </header>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Qué es 'The Brick Wall Project'</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Cómo funciona</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Por qué donar</button>
+      </div>
+      
+      <div id="London" class="tabcontent">
+        <p>The Brick Wall Project un grupo de amigos creadores culturales cuya misión en la vida es generar espacios 
+          para apoyar a colectivos con fuertes convicciones en su ingenio, innovación y producción de contenido. </p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <ol type="1">
+          <li>En el sitio web encontrar imágenes las cuales están divididas en pixeles.</li>
+          <li>Puedes adquirir uno o más pixeles.</li>
+          <li>Compras tu pixel en el botón de pago por solo 1,99 USD</li>
+          <li>Dentro de tu compra, se destinará una suma importante para los colectivos culturales anunciados en redes.</li>
+          <li>Recibes un correo con tu factura y la confirmación de tu aporte a los colectivos culturales.</li>
+        </ol>
+      </div>	 
+
+      <div id="Tokyo" class="tabcontent">
+        <p>El entretenimiento se ha visto afectado por la pandemia. Creemos que la cultura hace parte del día a día. Por 
+          eso, decidimos participar la solución creando un espacio diferente para contribuir con una solución a corto 
+          plazo. Con tu aporte, ayudarás a que el arte no se opaque. </p>
+        
+      </div>
+      
+
+
+      <div class="herramienta">
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+      </div>
+
+      <div class="about">
+        <div class="tarjetas" id="tarjeta1">
+            <img src="./images/usr.jpg" alt="John" style="width:100%">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+            <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+        </div>
+
+        <div class="descripcion">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
+            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
+            praesentium ab esse recusandae!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
+            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
+            praesentium ab esse recusandae!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
+            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
+            praesentium ab esse recusandae!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem facere vitae libero 
+            perferendis corporis ipsam aliquam reprehenderit. Nihil amet placeat dolor nostrum cum tempora ratione 
+            praesentium ab esse recusandae!
+
+        </div>
+
+
+      </div>
+
+
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+      </script>
+    <script src="./js/jquery-3.4.1.js"> </script>
+    <script src="./js/bootstrap.js"></script>
 </body>
