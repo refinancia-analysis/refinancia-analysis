@@ -1,5 +1,153 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+<style>
+    html {
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem*/
+    box-sizing: border-box;
+    
+} 
+
+body {
+    background-image: url("../images/wallpaper.jpg");
+    background-size: cover;
+}
+
+header img{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid rgba(23, 155, 6, 0.603);
+    background-color: #3bcf1694;
+    height: 40%;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 3.5rem;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgba(90, 74, 0, 0.349);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: rgba(182, 118, 0, 0.603);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color:  rgba(90, 74, 0, 0.404);
+    font-size: 2.5rem;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: azure;
+  }
+
+  .herramienta{
+      min-height: 90vh;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8,1fr);
+      width: 50vw;
+      background-color: rgba(255,0,0,.7);
+      grid-column-gap: 3px;
+      grid-row-gap:3px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10%;
+      margin-bottom: 10%;
+  }
+@media (max-width:1024px){
+  .herramienta{
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8,1fr);
+   
+    background-color: rgba(255,0,0,.7);
+    grid-column-gap: 3px;
+    grid-row-gap:3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+  width:auto;
+  min-height:55vh;
+  }
+
+}
+
+  .pixel {
+   
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    background-color: rgba(0,0,0,.2);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    transition: transform .2s;
+  }
+
+  .pixel:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+
+  .about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    grid-column-gap: 1vh;
+    width: 95%;
+}
+
+
+  .tarjetas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.932);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    background-color: rgba(22, 2, 21, 0.897);
+    color: azure;
+    grid-column: 1;
+  }
+  .descripcion {
+      grid-column: 2;
+      font-size: 1.8rem;
+      color: azure;
+  }
+</style>
 <body>
     <header>
         <img src="./images/bw-banner.jpg" alt="">
@@ -33,83 +181,6 @@
         
       </div>
       
-
-
-      <div class="herramienta">
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-        <div class="pixel"></div>
-      </div>
-
       <div class="about">
         <div class="tarjetas" id="tarjeta1">
             <img src="./images/usr.jpg" alt="John" style="width:100%">
